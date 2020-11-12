@@ -1,0 +1,18 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">ACAAY</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item" routerLinkActive="active" *ngFor="let ruta of rutas">
+                <a class="nav-link" [routerLink]="ruta.path">{{ruta.name}}</a>
+
+            </li>
+            <li class="nav-item" routerLinkActive="active">
+                <a class="nav-link btn btn-danger text-white letras letras-small px-4" href="#"> <i class="fas fa-times-circle pr-2"></i> Salir</a>
+            </li>
+        </ul>
+    </div>
+</nav>
